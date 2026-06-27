@@ -1,0 +1,6 @@
+{
+  "name": "Shreeseva Tours & Travels",
+  "description": "Premium Force Urbania, Tempo Traveller, and luxury tourist vehicle rentals across India. Specialized family trips, pilgrimage tours, weddings, and corporate travel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

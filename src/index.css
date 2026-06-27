@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: "Cinzel", serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-gold-50: #fefbeb;
+  --color-gold-100: #fdf6cd;
+  --color-gold-200: #fbe697;
+  --color-gold-300: #f8cf58;
+  --color-gold-400: #f5b525;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b88d1d;
+  --color-gold-700: #936814;
+  --color-gold-800: #765114;
+  --color-gold-900: #624215;
+  --color-navy-50: #f4f6fa;
+  --color-navy-100: #e5eaf2;
+  --color-navy-200: #ccd8e6;
+  --color-navy-300: #a3bad2;
+  --color-navy-400: #7394b9;
+  --color-navy-500: #51759e;
+  --color-navy-600: #3f5d82;
+  --color-navy-700: #334c6b;
+  --color-navy-800: #2c4059;
+  --color-navy-900: #0a192f;
+  --color-navy-950: #050b14;
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(135deg, #fbe697 0%, #d4af37 50%, #936814 100%);
+  }
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #fff 30%, #fbe697 70%, #d4af37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .navy-gradient {
+    background: linear-gradient(135deg, #0a192f 0%, #050b14 100%);
+  }
+  .glass-panel {
+    background: rgba(10, 25, 47, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glass-card-hover:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.15);
+    transform: translateY(-4px);
+  }
+}
+
+/* Custom Scrollbar for Luxury Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050b14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2c4e;
+  border-radius: 4px;
+  border: 2px solid #050b14;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Smooth custom transitions */
+.transition-luxury {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
