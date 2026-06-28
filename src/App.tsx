@@ -1531,7 +1531,7 @@ if (error) {
         )}
 
         {/* TAB 2: SECURED ADMIN PORTAL */}
-        {activeTab === 'admin' && (
+        {false && (
           <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto space-y-8 min-h-[80vh] animate-in fade-in duration-300">
 
             {/* Header Area */}
@@ -1906,15 +1906,7 @@ if (error) {
             <span>Safe Cruising</span>
             <span>✓ Reliable Fleet</span>
             <span>✓ Pan India permits</span>
-            <button
-              onClick={() => {
-                setActiveTab('admin');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className="hover:text-[#d4af37] font-bold text-white uppercase tracking-wider text-[10px]"
-            >
-              🔐 Control Desk
-            </button>
+           
           </div>
         </div>
 
